@@ -1,7 +1,7 @@
 {
     "name": "nodebb-plugin-groups-autoassigncategory",
     "version": "1.0.0",
-    "description": "A starter kit for quickly creating NodeBB plugins",
+    "description": "A bridge between forums and groups",
     "main": "library.js",
     "repository": {
         "type": "git",
