@@ -1,28 +1,31 @@
 {
-  "name": "nodebb-plugin-quickstart",
-  "version": "0.2.3",
-  "description": "A starter kit for quickly creating NodeBB plugins",
-  "main": "library.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-plugin-quickstart"
-  },
-  "keywords": [
-    "nodebb",
-    "plugin",
-    "quickstart",
-    "shell"
-  ],
-  "author": {
-    "name": "psychobunny",
-    "email": "psycho.bunny@hotmail.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-plugin-quickstart/issues"
-  },
-  "readmeFilename": "README.md",
-  "nbbpm": {
-    "compatibility": "^1.0.0"
-  }
+    "name": "nodebb-plugin-groups-autoassigncategory",
+    "version": "1.0.0",
+    "description": "A starter kit for quickly creating NodeBB plugins",
+    "main": "library.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/adlerosn/nodebb-plugin-groups-autoassigncategory"
+    },
+    "keywords": [
+        "nodebb",
+        "plugin",
+        "groups",
+        "categories"
+    ],
+    "author": {
+        "name": "Adler Neves",
+        "email": "adlerosn@gmail.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/adlerosn/nodebb-plugin-groups-autoassigncategory/issues"
+    },
+    "readmeFilename": "README.md",
+    "nbbpm": {
+        "compatibility": "^1.6.0"
+    },
+    "dependencies": {
+        "rewire": "^2.5.2"
+    }
 }

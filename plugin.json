@@ -1,14 +1,14 @@
 {
-	"id": "nodebb-plugin-quickstart",
-	"url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
+	"id": "nodebb-plugin-groups-autoassigncategory",
+	"url": "https://github.com/adlerosn/nodebb-plugin-groups-autoassigncategory",
 	"library": "./library.js",
 	"hooks": [
-		{
-			"hook": "static:app.load", "method": "init"
-		},
-		{
-			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
-		}
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+        { "hook": "action:group.create", "method": "createGroup" },
+        { "hook": "action:group.destroy", "method": "destroyGroup" },
+        { "hook": "action:group.update", "method": "editGroup" },
+        { "hook": "action:group.rename", "method": "renameGroup" }
 	],
 	"staticDirs": {
 		"static": "./static"

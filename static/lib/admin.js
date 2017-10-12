@@ -1,18 +1,18 @@
 'use strict';
 /* globals $, app, socket */
 
-define('admin/plugins/quickstart', ['settings'], function(Settings) {
+define('admin/plugins/groupcategories', ['settings'], function(Settings) {
 
 	var ACP = {};
 
 	ACP.init = function() {
-		Settings.load('quickstart', $('.quickstart-settings'));
+		Settings.load('groupcategories', $('.groupcategories-settings'));
 
 		$('#save').on('click', function() {
-			Settings.save('quickstart', $('.quickstart-settings'), function() {
+			Settings.save('groupcategories', $('.groupcategories-settings'), function() {
 				app.alert({
 					type: 'success',
-					alert_id: 'quickstart-saved',
+					alert_id: 'groupcategories-saved',
 					title: 'Settings Saved',
 					message: 'Please reload your NodeBB to apply these settings',
 					clickfn: function() {
